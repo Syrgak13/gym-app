@@ -23,14 +23,7 @@ public class Category {
     private String name;
 
 
-    @OneToMany(mappedBy = "categoryOfSubscription")
+    @OneToMany
     private Collection<Subscription> subscription;
-
-    public Collection<Subscription> getSubscription() {
-        return subscription;
-    }
-
-    public void setSubscription(Collection<Subscription> subscription) {
-        this.subscription = subscription;
-    }
 }
+

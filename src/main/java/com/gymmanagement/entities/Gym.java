@@ -22,7 +22,7 @@ public class Gym {
     private String phone;
 
 
-    @OneToMany(mappedBy = "branchOfGym")
+    @OneToMany
     private Collection<Subscription> subscriptions;
 }
 
